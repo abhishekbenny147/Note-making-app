@@ -1,0 +1,25 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taking App</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Advanced Note Taking App</h1>
+        {% if 'user' in session %}
+            <p>Welcome, {{ session['user'] }}! <a href="/logout" class="btn">Logout</a></p>
+            <textarea id="note" placeholder="Write your note here..."></textarea>
+            <button onclick="saveNote()">Save Note</button>
+            <div id="notes"></div>
+        {% else %}
+            <a href="/login" class="btn">Log In</a> | <a href="/signup" class="btn">Sign Up</a>
+        {% endif %}
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>

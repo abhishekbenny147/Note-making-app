@@ -1,0 +1,228 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Glassmorphic Container */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Heading */
+h1 {
+    font-size: 26px;
+    color: #00ffcc;
+    margin-bottom: 10px;
+    text-shadow: 0 0 8px rgba(0, 255, 204, 0.8);
+}
+
+/* Buttons */
+button, .btn {
+    background: #00ffcc;
+    color: #141e30;
+    font-weight: 600;
+    padding: 10px 15px;
+    margin: 10px 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 255, 204, 0.3);
+}
+
+button:hover, .btn:hover {
+    background: #00bfa5;
+    box-shadow: 0 6px 15px rgba(0, 255, 204, 0.6);
+}
+
+/* Form Inputs */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(0, 255, 204, 0.4);
+    color: white;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+    border-color: #00ffcc;
+    box-shadow: 0 0 8px rgba(0, 255, 204, 0.8);
+}
+
+/* Notes List */
+#notes {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.note-item {
+    background: rgba(0, 255, 204, 0.1);
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s ease;
+    border-left: 4px solid #00ffcc;
+}
+
+.note-item:hover {
+    background: rgba(0, 255, 204, 0.2);
+}
+
+/* Delete & Edit Buttons */
+.delete-btn, .edit-btn {
+    background: transparent;
+    color: #ff4444;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.edit-btn {
+    color: #ffc107;
+    margin-right: 8px;
+}
+
+.delete-btn:hover {
+    color: #ff2222;
+}
+
+.edit-btn:hover {
+    color: #ff9800;
+}
+
+/* Notes Page Enhancements */
+.notes-container {
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+/* Logout Button (Top Right) */
+.logout-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logout-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ff4444;
+    border-color: #ff4444;
+}
+
+/* Group Save & Logout Buttons */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Logout Button Style */
+.logout-btn {
+    background: #ff4444;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
+}
+
+.logout-btn:hover {
+    background: #cc0000;
+    box-shadow: 0 6px 15px rgba(255, 0, 0, 0.6);
+}
+/* Note Taking App Title */
+.app-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #00ffcc; /* Neon blue-green to match the theme */
+    text-shadow: 0 0 15px #00ffff; /* Glowing effect */
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+
+/* Auth switch text (Login/Signup links) */
+.switch-auth {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff; /* White text for better contrast */
+}
+
+.switch-auth a {
+    color: #00ffcc; /* Bright neon blue-green */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.switch-auth a:hover {
+    color: #00e6e6; /* Slightly lighter neon */
+    text-shadow: 0 0 10px #00ffff; /* Glowing effect */
+}
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container, .notes-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+

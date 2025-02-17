@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+   
+    <div class="notes-container">
+        <h1 class="app-title">Note Taking App</h1>
+        <h1>Welcome, {{ session['user'] }}</h1>
+        <textarea id="note" placeholder="Write your note here..."></textarea>
+        
+        <!-- Save & Logout Buttons Side by Side -->
+        <div class="button-group">
+            <button onclick="saveNote()">Save Note</button>
+            <button class="logout-btn" onclick="window.location.href='/logout'">Logout</button>
+        </div>
+
+        <div id="notes"></div>
+    </div>
+    
+    <script src="static/script.js"></script>
+</body>
+</html>
